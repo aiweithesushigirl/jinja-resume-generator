@@ -1,2 +1,2 @@
 # jinja-resume-generator
-Inspired by eecs485 p1
+Inspired by a jinja project of instagram

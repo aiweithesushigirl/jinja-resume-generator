@@ -1,0 +1,9 @@
+README.md
+resumegenerator/__init__.py
+resumegenerator/__main__.py
+resumegenerator.egg-info/PKG-INFO
+resumegenerator.egg-info/SOURCES.txt
+resumegenerator.egg-info/dependency_links.txt
+resumegenerator.egg-info/entry_points.txt
+resumegenerator.egg-info/requires.txt
+resumegenerator.egg-info/top_level.txt

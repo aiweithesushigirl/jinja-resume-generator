@@ -1,0 +1,3 @@
+[console_scripts]
+resumegenerator = resumegenerator.__main__:main
+
