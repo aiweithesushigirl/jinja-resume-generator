@@ -1,4 +1,3 @@
-"""Build static HTML site from directory of HTML templates and plain files."""
 import os
 import sys
 import json

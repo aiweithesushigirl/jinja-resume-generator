@@ -10,6 +10,8 @@ cd resumegenerator
 python __main__.py
 
 # serve up the newly created site and browse to http://localhost:8000/.
+cd ..
+cd resume/resume_result
 python3 -m http.server 8000
 ```
 
