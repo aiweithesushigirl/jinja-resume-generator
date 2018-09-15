@@ -26,18 +26,14 @@ def main():
     for parameter in config_parameters:
         try:
             template_index = template_env.get_template(parameter['template'])
-        except IOError:
-            sys.exit(1)
-        if not os.path.exists(os.path.join(output_directory + parameter['url'])):
-            os.makedirs(os.path.join(output_directory + parameter['url']))
-        try:
-            result = (template_index.render(parameter['context']))
-            file = open(os.path.join(output_directory
-                                     + parameter['url'], "index.html"), "w")
+            if not os.path.exists(os.path.join(output_directory + parameter["url"])):
+                os.makedirs(os.path.join(output_directory + parameter["url"]))
+            result = template_index.render(parameter["context"])
+            file = open(os.path.join(output_directory + parameter["url"],
+                                     "index.html"), "w")
             file.write(result)
         except IOError:
             sys.exit(1)
-
 
 if __name__ == "__main__":
     # pylint: disable=no-value-for-parameter

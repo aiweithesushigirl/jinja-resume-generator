@@ -1,1 +1,1 @@
-"""A static site generator."""
+"""A resume generator."""
